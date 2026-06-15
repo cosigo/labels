@@ -115,6 +115,27 @@
 </style>
 
 
+
+<style id="site-appendix-footer-style">
+.site-appendix-footer {
+  margin: 28px auto 0;
+  padding: 18px 16px 26px;
+  text-align: center;
+  font-size: 0.88rem;
+  opacity: 0.78;
+}
+.site-appendix-footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+.site-appendix-footer a:hover,
+.site-appendix-footer a:focus-visible {
+  opacity: 1;
+  border-bottom-style: solid;
+}
+</style>
+
 </head>
 
 <body>
@@ -186,19 +207,19 @@
 
                     <p>
                         A “clean” token with no meaningful defenses may look better to automated systems, but newly
-                        pooled liquidity can be easier to drain, distort, or dominate. For an outsider launching a 
+                        pooled liquidity can be easier to drain, distort, or dominate. For an outsider launching a
                         token, this can become a forced choice between scanner optics and holder protection.
                     </p>
 
                     <div class="callout red">
                         What is truly dangerous is not the existence of transparent defensive controls in a verified
-                        contract. Greater risk lies in pressuring new tokens into unprotected structures where liquidity 
-                        can be extracted before ordinary holders have a fair chance to participate. In practice, a small 
-                        cluster of scanner and interface-layer actors — including GoPlus, CertiK, HashDit, DappBay / Red 
-                        Alarm, and wallet-side risk layers such as MetaMask / Blockaid — can shape access, warnings, and 
-                        public perception far beyond what a single independent issuer can realistically counter. After 
-                        being labeled malicious without a clear technical basis, CIGO has no reason to weaken its own 
-                        protections for opaque third-party labelers. Disclosed defensive controls will remain in place 
+                        contract. Greater risk lies in pressuring new tokens into unprotected structures where liquidity
+                        can be extracted before ordinary holders have a fair chance to participate. In practice, a small
+                        cluster of scanner and interface-layer actors — including GoPlus, CertiK, HashDit, DappBay / Red
+                        Alarm, and wallet-side risk layers such as MetaMask / Blockaid — can shape access, warnings, and
+                        public perception far beyond what a single independent issuer can realistically counter. After
+                        being labeled malicious without a clear technical basis, CIGO has no reason to weaken its own
+                        protections for opaque third-party labelers. Disclosed defensive controls will remain in place
                         to protect liquidity, holders, and market integrity from predatory behavior.
                     </div>
                 </div>
@@ -224,7 +245,7 @@
                     <p>
                         Exact public statistics for honest deployers who self-funded a weakly defended launch and then
                         lost all seeded liquidity do not appear to exist as a published category. Absence or inconvenience
-                        does not prove pattern is rare. It may simply mean this class of loss is poorly tracked, underreported, 
+                        does not prove pattern is rare. It may simply mean this class of loss is poorly tracked, underreported,
                         or buried inside a broader token market structure that rewards better-capitalized and better-positioned
                         actors.
                     </p>
@@ -325,6 +346,11 @@
                 </p>
             </div>
         </footer>
-    </body>
+
+  <footer class="site-appendix-footer">
+    <a href="https://trade.cosigo.io/appendix.html">site appendix / quick reference</a>
+  </footer>
+
+</body>
 
 </html>
