@@ -1,0 +1,5 @@
+public/backups/
+*.bak
+*~
+node_modules/
+.DS_Store
