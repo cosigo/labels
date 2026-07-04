@@ -39,7 +39,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="/shared/labels.css?v=20260704-menu-css">
+    <link rel="stylesheet" href="/shared/labels.css?v=20260704-mobile-menu">
 <style id="site-appendix-footer-style">
 .site-appendix-footer {
   margin: 28px auto 0;
@@ -63,8 +63,18 @@
 </head>
 
 <body>
-<!-- COSIGO simple top menu -->
-<nav class="cosigo-simple-top-menu" aria-label="COSIGO main navigation">
+<header class="labels-mobile-menu-bar">
+  <div class="labels-mobile-menu-inner">
+    <a class="labels-mobile-brand" href="https://labels.cosigo.io/" aria-label="COSIGO evidence labels home">
+      <img src="/shared/assets/icons/cigo_256.png" alt="CIGO token icon">
+      <span>
+        <strong>evidence labels</strong>
+        <small>COSIGO public record</small>
+      </span>
+    </a>
+
+    <button class="labels-mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="labelsMobileMenuNav">menu</button>
+<nav id="labelsMobileMenuNav" class="cosigo-simple-top-menu labels-mobile-nav" aria-label="COSIGO site navigation">
   <span class="menu-label">COSIGO:</span>
   <a href="https://cosigo.io/">home</a>
   <a href="https://trade.cosigo.io/">trade</a>
@@ -73,6 +83,9 @@
   <a href="https://quote.cosigo.io/">quote</a>
   <a href="https://snakepit.cosigo.io/security_notice.html#summary">security notes</a>
 </nav>
+  </div>
+</header>
+
 
         <header class="site-header">
 <div class="wrap recordbar">
@@ -194,6 +207,7 @@
     <a href="https://trade.cosigo.io/appendix.html">site appendix / quick reference</a>
   </footer>
 
+<script src="/shared/labels-menu.js?v=20260704-mobile-menu" defer></script>
 </body>
 
 </html>

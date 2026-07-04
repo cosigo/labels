@@ -685,3 +685,150 @@ a.brand-link:hover {
     padding: 8px 12px;
   }
 }
+
+/* Mobile dropdown wrapper for centralized labels menu.
+   Desktop intentionally preserves the existing labels menu row. */
+.labels-mobile-brand,
+.labels-mobile-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .labels-mobile-menu-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    border-bottom: 1px solid rgba(236, 197, 112, 0.22);
+    background: rgba(11, 15, 25, 0.94);
+    backdrop-filter: blur(12px);
+  }
+
+  .labels-mobile-menu-inner {
+    width: min(calc(100% - 20px), var(--max, 1120px));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .labels-mobile-brand {
+    max-width: calc(100% - 96px);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    min-width: 0;
+  }
+
+  .labels-mobile-brand img {
+    width: 36px;
+    height: 36px;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
+    flex: 0 0 auto;
+    box-shadow: 0 0 18px rgba(255, 184, 77, 0.16);
+  }
+
+  .labels-mobile-brand span {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .labels-mobile-brand strong {
+    color: #ffffff;
+    font-size: 0.96rem;
+    font-weight: 900;
+    line-height: 1.05;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .labels-mobile-brand small {
+    margin-top: 3px;
+    color: rgba(226, 232, 240, 0.72);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .labels-mobile-menu-toggle {
+    min-height: 36px;
+    margin-left: auto;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(245, 232, 197, 0.96);
+    font: inherit;
+    font-size: 0.86rem;
+    font-weight: 850;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(214, 174, 94, 0.34);
+    background: linear-gradient(135deg, rgba(55, 34, 16, 0.78), rgba(118, 72, 31, 0.30));
+    box-shadow: 0 0 10px rgba(214, 174, 94, 0.08);
+    cursor: pointer;
+  }
+
+  .labels-mobile-menu-toggle:hover,
+  .labels-mobile-menu-toggle:focus-visible {
+    color: #fff6dc;
+    border-color: rgba(236, 197, 112, 0.68);
+    background: linear-gradient(135deg, rgba(92, 54, 22, 0.90), rgba(154, 98, 43, 0.50), rgba(74, 42, 88, 0.34));
+    outline: none;
+  }
+
+  .labels-mobile-menu-bar .cosigo-simple-top-menu {
+    position: static;
+    top: auto;
+    z-index: auto;
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 8px;
+    border: 1px solid rgba(236, 197, 112, 0.22);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(15, 12, 9, 0.96), rgba(8, 9, 12, 0.94));
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.34);
+    max-height: calc(100vh - 92px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .labels-mobile-menu-bar .cosigo-simple-top-menu.is-open {
+    display: flex;
+  }
+
+  .labels-mobile-menu-bar .cosigo-simple-top-menu .menu-label {
+    display: none;
+  }
+
+  .labels-mobile-menu-bar .cosigo-simple-top-menu a {
+    width: 100%;
+    min-height: 40px;
+    justify-content: flex-start;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
